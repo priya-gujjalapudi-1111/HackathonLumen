@@ -2,22 +2,30 @@
 <html>
 <head>
 	<title>Event Management Page</title>
+	<style>
+	.centerimg1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}.centereve{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	align-items: center;
+}
+	</style>
 	<link rel="stylesheet" type="text/css" href="event.css">
 	<script type="text/javascript" src="event.js"></script>
 </head>
 <body>
-	<img src="ems.jpg" width="500px" height="300px">
+	<img src="image1.jpg"  class="centerimg1"align="center" width="500px" height="300px">
     <header>
-		<h1>Event Management</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
+		<h1 class="centereve">Event Management</h1>
+
 	</header>
 	<main>
+		
 		<section>
 			<h2>Create an Event</h2>
 			<form>
@@ -39,17 +47,10 @@
 				<button type="submit" onclick="createEvent()">Create Event</button>
 			</form>
 		</section>
-		<section>
-			<h2>Upcoming Events</h2>
-			<ul id="event-list">
-				<li>Event 1 - April 1, 2023</li>
-				<li>Event 2 - April 15, 2023</li>
-				<li>Event 3 - May 1, 2023</li>
-			</ul>
-		</section>
+
 	</main>
 	<footer>
-		<p>&copy; 2023 Event Management</p>
+		<p>Have a Nice Day!!</p>
 	</footer>
 </body>
 </html>
