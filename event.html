@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Management Page</title>
+	<link rel="stylesheet" type="text/css" href="event.css">
+	<script type="text/javascript" src="event.js"></script>
+</head>
+<body>
+	<img src="ems.jpg" width="500px" height="300px">
+    <header>
+		<h1>Event Management</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Create an Event</h2>
+			<form>
+				<label for="event-name">Event Name:</label>
+				<input type="text" id="event-name" name="event-name" required><br>
+
+				<label for="event-date">Event Date:</label>
+				<input type="date" id="event-date" name="event-date" required><br>
+
+				<label for="event-time">Event Time:</label>
+				<input type="time" id="event-time" name="event-time" required><br>
+
+				<label for="event-location">Event Location:</label>
+				<input type="text" id="event-location" name="event-location" required><br>
+
+				<label for="event-description">Event Description:</label>
+				<textarea id="event-description" name="event-description" required></textarea><br>
+
+				<button type="submit" onclick="createEvent()">Create Event</button>
+			</form>
+		</section>
+		<section>
+			<h2>Upcoming Events</h2>
+			<ul id="event-list">
+				<li>Event 1 - April 1, 2023</li>
+				<li>Event 2 - April 15, 2023</li>
+				<li>Event 3 - May 1, 2023</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Event Management</p>
+	</footer>
+</body>
+</html>
